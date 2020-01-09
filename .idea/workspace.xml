@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6ccc928-d6eb-4a39-8d79-1743842ae1aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/movieCard/MovieCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-controls/PageControlItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-controls/PageControlSearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-controls/PageControls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-numbers/PageNumberDots.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-numbers/PageNumberItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagination/page-numbers/PageNumbers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/navbar/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/overview/Overview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pagination/Pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pagination/Pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/spinner/Spinner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spinner/Spinner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="b6ccc928-d6eb-4a39-8d79-1743842ae1aa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -76,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/overview/Overview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+            <state relative-caret-position="272">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#44#93#0" expanded="true" />
@@ -202,6 +180,19 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="movieCard" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="moviedb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moviedb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="moviedb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moviedb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="overview" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -255,12 +246,20 @@
       <option name="presentableId" value="Default" />
       <updated>1578338381041</updated>
       <workItem from="1578338382236" duration="2314000" />
-      <workItem from="1578594251423" duration="4527000" />
+      <workItem from="1578594251423" duration="4803000" />
     </task>
+    <task id="LOCAL-00001" summary="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail">
+      <created>1578599003266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578599003266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6841000" />
+    <option name="totallyTimeSpent" value="7117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -287,6 +286,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -400,8 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/overview/Overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+        <state relative-caret-position="272">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#44#93#0" expanded="true" />
