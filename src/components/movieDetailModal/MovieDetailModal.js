@@ -5,11 +5,14 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import ISO6391 from 'iso-639-1'
+import {withRouter} from "react-router-dom";
 
 // Component
 ////////////
 
-export const MovieDetailModal = ({movie}) => {
+const MovieDetailModal = (props) => {
+
+    const { movie } = props;
 
     // Fetch the background base url from the environment variables
     const baseUrlBackdrop = process.env.REACT_APP_BASEURL_BACKDROP;
@@ -155,7 +158,9 @@ export const MovieDetailModal = ({movie}) => {
                         </button>
                         <button
                             data-dismiss="modal" aria-label="Close"
-                            className="btn btn-primary">
+                            className="btn btn-primary"
+                            onClick={() => props.history.push(`/movie/${movie.id}`)}
+                        >
                             View moviedetail <i className="fas fa-search ml-2"/>
                         </button>
                     </div>
@@ -164,3 +169,6 @@ export const MovieDetailModal = ({movie}) => {
         </div>
     );
 };
+
+
+export default withRouter(MovieDetailModal)

@@ -8,7 +8,7 @@ import axios from 'axios';
 // Components
 import { MovieCard } from '../../components/movieCard/MovieCard';
 import { Spinner } from '../../components/spinner/Spinner';
-import { MovieDetailModal } from '../../components/movieDetailModal/MovieDetailModal';
+import MovieDetailModal from '../../components/movieDetailModal/MovieDetailModal';
 import { Pagination } from '../../components/pagination/Pagination';
 
 
