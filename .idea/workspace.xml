@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6ccc928-d6eb-4a39-8d79-1743842ae1aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/movie/Movie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/styleGenerators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/overview/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/overview/Overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,51 +22,25 @@
     <splitter split-orientation="horizontal" split-proportion="0.45047373">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#44#70#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" selection-start-line="13" selection-end-line="13" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#44#70#0" expanded="true" />
-                    <element signature="e#159#198#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/pages/overview/Overview.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#128#193#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/pages/navbar/Navbar.js">
+            <entry file="file://$PROJECT_DIR$/src/pages/movie/Movie.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+                <state relative-caret-position="199">
+                  <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#44#83#0" expanded="true" />
+                    <element signature="e#172#229#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#44#70#0" expanded="true" />
@@ -78,11 +53,54 @@
       </split-first>
       <split-second>
         <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/pages/overview/Overview.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="544">
+                  <caret line="45" column="55" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="55" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#128#193#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/utils/styleGenerators.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="335">
-                  <caret line="160" column="55" lean-forward="true" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
+                <state relative-caret-position="765">
+                  <caret line="97" column="81" lean-forward="true" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
                 </state>
               </provider>
             </entry>
@@ -109,12 +127,15 @@
         <option value="$PROJECT_DIR$/src/components/common/Badge.js" />
         <option value="$PROJECT_DIR$/src/components/pagination/Pagination.js" />
         <option value="$PROJECT_DIR$/src/components/spinner/Spinner.js" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/pages/App.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/pages/overview/Overview.js" />
-        <option value="$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js" />
         <option value="$PROJECT_DIR$/src/pages/navbar/Navbar.js" />
+        <option value="$PROJECT_DIR$/src/pages/App.js" />
+        <option value="$PROJECT_DIR$/src/components/navbar/Navbar.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/utils/styleGenerators.js" />
+        <option value="$PROJECT_DIR$/src/pages/movie/Movie.js" />
+        <option value="$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js" />
       </list>
     </option>
   </component>
@@ -164,13 +185,7 @@
               <item name="MovieDB-React-Groep4" type="b2602c69:ProjectViewProjectNode" />
               <item name="MovieDB-React-Groep4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MovieDB-React-Groep4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MovieDB-React-Groep4" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="navbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,7 +193,19 @@
               <item name="MovieDB-React-Groep4" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieDB-React-Groep4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieDB-React-Groep4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="overview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MovieDB-React-Groep4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MovieDB-React-Groep4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,13 +228,14 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DTPAdmin\Desktop\Dzengiz\Projects\Syntra\MovieDB-React-Groep4\src\components" />
+      <recent name="C:\Users\Al Ingenomen\Documents\Projects\syntra\react\moviedb\src\pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Al Ingenomen\Documents\Projects\syntra\react\moviedb\src\assets\css" />
       <recent name="C:\Users\Al Ingenomen\Documents\Projects\syntra\react\moviedb\src\components" />
       <recent name="C:\Users\Al Ingenomen\Documents\Projects\syntra\react\moviedb\src\assets\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Al Ingenomen\Documents\Projects\syntra\react\moviedb\src\pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -234,7 +262,7 @@
       <updated>1578338381041</updated>
       <workItem from="1578338382236" duration="2314000" />
       <workItem from="1578594251423" duration="4803000" />
-      <workItem from="1579248931497" duration="526000" />
+      <workItem from="1579248931497" duration="9618000" />
     </task>
     <task id="LOCAL-00001" summary="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail">
       <created>1578599003266</created>
@@ -243,14 +271,22 @@
       <option name="project" value="LOCAL" />
       <updated>1578599003266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The modal is now able to link to the movie page, passing the movie id. Also added a link to the Overview button in the navbar.">
+      <created>1579249522744</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579249522744</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7643000" />
+    <option name="totallyTimeSpent" value="16735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1287" y="0" width="2573" height="1031" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08402367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -277,20 +313,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Overview is now showing. State works &amp; data is being fetched. Pagination is operational. Movie cards work &amp; so is the modal as a gateway to the movie detail" />
+    <MESSAGE value="The modal is now able to link to the movie page, passing the movie id. Also added a link to the Overview button in the navbar." />
+    <option name="LAST_COMMIT_MESSAGE" value="The modal is now able to link to the movie page, passing the movie id. Also added a link to the Overview button in the navbar." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -361,27 +391,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#44#70#0" expanded="true" />
-            <element signature="e#159#198#0" expanded="true" />
+            <element signature="e#159#210#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="160" column="55" lean-forward="true" selection-start-line="160" selection-start-column="55" selection-end-line="160" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/overview/Overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="544">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="55" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#128#193#0" expanded="true" />
@@ -389,13 +412,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/navbar/Navbar.js">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="51">
+          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/navbar/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#44#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/styleGenerators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/movieDetailModal/MovieDetailModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="97" column="81" lean-forward="true" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/movie/Movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#44#83#0" expanded="true" />
+            <element signature="e#172#229#0" expanded="true" />
           </folding>
         </state>
       </provider>

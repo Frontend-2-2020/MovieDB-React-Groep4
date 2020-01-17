@@ -6,8 +6,9 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 // Components
-import {Navbar} from './navbar/Navbar';
+import {Navbar} from '../components/navbar/Navbar';
 import Overview from './overview/Overview';
+import Movie from './movie/Movie';
 
 // Styling
 import '../assets/css/App.css';
@@ -24,6 +25,7 @@ function App() {
                 <div className="container-fluid mt-4 mb-4">
                     <Switch>
                         <Route exact path="/" component={Overview}/>
+                        <Route path={`/movie/:id`} component={Movie}/>
                     </Switch>
                 </div>
             </Router>

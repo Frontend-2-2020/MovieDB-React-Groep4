@@ -6,57 +6,25 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import ISO6391 from 'iso-639-1'
 import {withRouter} from "react-router-dom";
+import {generateBackdropStyle, generateScoreStyle} from "../../utils/styleGenerators";
 
 // Component
 ////////////
 
 const MovieDetailModal = (props) => {
 
+    // Fetch the movie from the props
     const { movie } = props;
-
-    // Fetch the background base url from the environment variables
-    const baseUrlBackdrop = process.env.REACT_APP_BASEURL_BACKDROP;
-    const baseUrlPoster = process.env.REACT_APP_BASEURL_CARDIMG;
-
-    // Initiate an empty poster url
-    let posterUrl = '';
 
     // State handling
     const [movieGenres, setMovieGenres] = useState([]);
 
-    // Styling for the backdrop
-    let backdropStyle = {};
-    let backdropBaseStyle = {
-        height: '600px', backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'
-    };
+    // Set poster URI
+    const posterUrl = process.env.REACT_APP_BASEURL_CARDIMG + movie.poster_path;
 
-    // Styling for the score
-    let scoreStyle = {};
-    const scoreBaseStyle = {
-        height: '45px', width: '45px', borderRadius: '50%'
-    };
-
-    // If the movie object is filled find the styles to apply & data to use
-    if (Object.keys(movie).length > 0) {
-        // Set poster URI
-        posterUrl = baseUrlPoster + movie.poster_path;
-
-        // Generate the backdropStyle
-        backdropStyle = {...backdropBaseStyle, backgroundImage: `url('${baseUrlBackdrop}${movie.backdrop_path}')`};
-
-        // Discern scoreStyle
-        if (movie.vote_average <= 10 && movie.vote_average >= 8.5) {
-            scoreStyle = {...scoreBaseStyle, backgroundColor: 'rgb(3, 173, 252)'};
-        } else if (movie.vote_average < 8.5 && movie.vote_average >= 7) {
-            scoreStyle = {...scoreBaseStyle, backgroundColor: 'rgb(3, 252, 211)'};
-        } else if (movie.vote_average < 7 && movie.vote_average >= 5.5) {
-            scoreStyle = {...scoreBaseStyle, backgroundColor: 'rgb(169, 252, 3)'};
-        } else if (movie.vote_average < 5.5 && movie.vote_average >= 4) {
-            scoreStyle = {...scoreBaseStyle, backgroundColor: 'rgb(252, 198, 3)'};
-        } else {
-            scoreStyle = {...scoreBaseStyle, backgroundColor: 'rgb(252, 61, 3)'};
-        }
-    }
+    // Styling for the backdrop & score
+    const backdropStyle = generateBackdropStyle(movie.backdrop_path);
+    const scoreStyle = generateScoreStyle(movie.vote_average);
 
     // When the movie changes reload its genres
     useEffect(() => {
@@ -113,34 +81,30 @@ const MovieDetailModal = (props) => {
                                                     {genresToDisplay}
                                                 </div>
                                                 <div className="info">
-                                                    <div
-                                                        className="d-flex justify-content-between align-content-between mb-4">
-                                                        <div className="releaseDate">
+                                                    <div className="d-flex justify-content-between align-content-between mb-4">
+                                                        <div>
                                                             <h4 className="lead text-muted">Language</h4>
                                                             <p className="text-muted mb-0">{ISO6391.getName(movie.original_language)}</p>
                                                         </div>
                                                         <div
-                                                            className="language d-flex flex-column justify-content-end align-items-end">
+                                                            className="d-flex flex-column justify-content-end align-items-end">
                                                             <h4 className="lead text-muted">Release date</h4>
                                                             <p className="text-muted mb-0">{movie.release_date}</p>
                                                         </div>
                                                     </div>
-                                                    <div className="votes d-flex justify-content-between">
-                                                        <div className="totalVotes">
+                                                    <div className="d-flex justify-content-between">
+                                                        <div>
                                                             <h4 className="lead text-muted">Total votes</h4>
                                                             <p className="text-muted mb-0">{movie.vote_count}</p>
                                                         </div>
-                                                        <div className="voteAverage d-flex flex-column justify-content-center align-items-center">
-                                                            <div className="voteAverage score d-flex flex-column justify-content-center align-items-center"
+                                                        <div className="d-flex flex-column justify-content-center align-items-center">
+                                                            <div className="d-flex flex-column justify-content-center align-items-center"
                                                                  style={scoreStyle}>
                                                                 <h6 className="m-0">{movie.vote_average}</h6>
                                                             </div>
                                                         </div>
-
-
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
