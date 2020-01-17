@@ -8,8 +8,8 @@ import axios from 'axios';
 // Components
 import { MovieCard } from '../../components/movieCard/MovieCard';
 import { Spinner } from '../../components/spinner/Spinner';
-import MovieDetailModal from '../../components/movieDetailModal/MovieDetailModal';
 import { Pagination } from '../../components/pagination/Pagination';
+import MovieDetailModal from '../../components/movieDetailModal/MovieDetailModal';
 
 
 // Overview component
@@ -21,11 +21,9 @@ class Overview extends Component {
         super(props);
 
         this.state = {
-            baseUrlOverview: process.env.REACT_APP_BASEURL_OVERVIEW,
-            ApiKey: process.env.REACT_APP_API_KEY,
             moviesLoading: true,
             movies: [],
-            movie: [],
+            movie: {},
             currentPage: 1,
             pages: null
         }
@@ -39,11 +37,12 @@ class Overview extends Component {
 
 
     fetchMovies = () => {
-        // Fetch stuff from the state
-        const { baseUrlOverview, ApiKey, currentPage } = this.state;
+
+        const baseUrlOverview = process.env.REACT_APP_BASEURL_OVERVIEW;
+        const ApiKey = process.env.REACT_APP_API_KEY;
 
         // Do the request to get the movies & set the state
-        axios.get(`${baseUrlOverview}&api_key=${ApiKey}&page=${currentPage}`)
+        axios.get(`${baseUrlOverview}&api_key=${ApiKey}&page=${this.state.currentPage}`)
             .then(res => {
                 console.log(res.data.results);
                 this.setState({
@@ -90,7 +89,7 @@ class Overview extends Component {
     changeMovie = (movie) => {
         this.setState({
             movie: movie
-        }, () => this.fetchMovies())
+        }, this.fetchMovies)
     };
 
     // Decrement page handler
@@ -98,7 +97,7 @@ class Overview extends Component {
         this.state.currentPage > 1 &&
         this.setState({
             currentPage: this.state.currentPage - 1
-        }, () => this.fetchMovies())
+        }, this.fetchMovies)
     };
 
     // Increment page handler
@@ -106,21 +105,21 @@ class Overview extends Component {
         this.state.currentPage < this.state.pages &&
         this.setState({
             currentPage: this.state.currentPage + 1
-        }, () => this.fetchMovies())
+        }, this.fetchMovies)
     };
 
     // Set first page handler
     setPageBegin = () => {
         this.setState({
             currentPage: 1
-        }, () => this.fetchMovies())
+        }, this.fetchMovies)
     };
 
     // Set last page handler
     setPageEnd = () => {
         this.setState({
             currentPage: this.state.pages
-        }, () => this.fetchMovies())
+        }, this.fetchMovies)
     };
 
     // Set page number handler
@@ -128,10 +127,10 @@ class Overview extends Component {
         Math.abs(value) <= this.state.pages
             ? this.setState({
                 currentPage: Math.abs(value)
-            }, () => this.fetchMovies())
+            }, this.fetchMovies)
             : this.setState({
                 currentPage: this.state.pages
-            }, () => this.fetchMovies())
+            }, this.fetchMovies)
     };
 }
 

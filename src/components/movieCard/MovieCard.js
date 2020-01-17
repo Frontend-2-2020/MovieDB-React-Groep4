@@ -11,9 +11,9 @@ import PropTypes from 'prop-types';
 
 export const MovieCard = ({title, overview, poster, relDate, votes, movie, changeMovie}) => {
     return (
-        <div className="col-xl-2 col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div className="col-lg-3 col-md-4 col-sm-12 mb-4">
             <div className="card h-100">
-                <img src={poster} className="card-img-top" width="50%" alt={title}/>
+                {poster && <img src={poster} className="card-img-top" width="50%" alt={title}/>}
                 <div className="card-body d-flex flex-column justify-content-between">
                     <div className="card-body__section mb-4">
                         <h5 className="card-title text-muted lead">{title}</h5>
