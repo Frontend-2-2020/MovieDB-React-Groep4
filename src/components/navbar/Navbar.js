@@ -6,8 +6,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-// Component
-////////////
+// Navbar component
+///////////////////
 
 export const Navbar = () => {
     return (

@@ -4,13 +4,15 @@
 // Base dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
-import Badge from "../common/Badge";
+
+// Components
+import Badge from "../badge/Badge";
 
 
 // TitleOverview component
 //////////////////////////
 
-export const TitleOverview = ({title, overview, genres, type}) => {
+export const TitleOverview = ({ title, overview, genres, type }) => {
 
     // Discern text color
     let textColor = "";

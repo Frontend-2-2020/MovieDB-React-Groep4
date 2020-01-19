@@ -1,7 +1,7 @@
 // Imports
 /////////
 
-// Dependencies
+// Base dependencies
 import React from 'react';
 
 // Media

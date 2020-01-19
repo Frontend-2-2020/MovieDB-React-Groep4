@@ -6,10 +6,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-// Movie Card component
+// MovieCard component
 ///////////////////////
 
-export const MovieCard = ({title, overview, poster, relDate, votes, movie, changeMovie}) => {
+export const MovieCard = ({ title, overview, poster, relDate, votes, movie, changeMovie }) => {
     return (
         <div className="col-lg-3 col-md-4 col-sm-12 mb-4">
             <div className="card h-100">

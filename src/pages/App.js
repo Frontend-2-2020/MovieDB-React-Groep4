@@ -3,10 +3,10 @@
 
 // Base dependencies
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Components
-import {Navbar} from '../components/navbar/Navbar';
+import { Navbar } from '../components/navbar/Navbar';
 import Overview from './overview/Overview';
 import Movie from './movie/Movie';
 
@@ -22,10 +22,11 @@ function App() {
         <div className="App">
             <Router>
                 <Navbar/>
-                <div className="container-fluid mt-4 mb-4">
+                <div className="container-fluid">
                     <Switch>
-                        <Route exact path="/" component={Overview}/>
                         <Route path={`/movie/:id`} component={Movie}/>
+                        <Route path="/" component={Overview}/>
+
                     </Switch>
                 </div>
             </Router>

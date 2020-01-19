@@ -17,6 +17,7 @@ import MovieDetailModal from '../../components/movieDetailModal/MovieDetailModal
 
 class Overview extends Component {
 
+    // Constructor for the component
     constructor(props) {
         super(props);
 
@@ -36,6 +37,11 @@ class Overview extends Component {
     }
 
 
+    /******************
+     * Event handlers *
+     ******************/
+
+    // Handler to fetch the movies
     fetchMovies = () => {
 
         const baseUrlOverview = process.env.REACT_APP_BASEURL_OVERVIEW;
@@ -44,7 +50,6 @@ class Overview extends Component {
         // Do the request to get the movies & set the state
         axios.get(`${baseUrlOverview}&api_key=${ApiKey}&page=${this.state.currentPage}`)
             .then(res => {
-                console.log(res.data.results);
                 this.setState({
                     moviesLoading: false,
                     movies: res.data.results,
@@ -52,38 +57,6 @@ class Overview extends Component {
                 });
             })
     };
-
-    render() {
-
-
-        // Generate the content, show a spinner of the movies are still loading
-        const moviesContent = this.state.moviesLoading
-            ? <Spinner/>
-            : this.state.movies.map(movie => {
-                const posterUrl = process.env.REACT_APP_BASEURL_CARDIMG + movie.poster_path;
-                return <MovieCard key={movie.id} votes={movie.vote_average} overview={movie.overview} poster={posterUrl} relDate={movie.release_date} title={movie.title} movie={movie} changeMovie={this.changeMovie}/>
-            });
-
-        return (
-            <div>
-                <Pagination pages={this.state.pages} currentPage={this.state.currentPage} decrementPage={this.decrementPage} incrementPage={this.incrementPage}
-                            setPageEnd={this.setPageEnd} setPageBegin={this.setPageBegin} selectPage={this.selectPage}/>
-
-                <div className="row">
-                    {moviesContent}
-                    <MovieDetailModal movie={this.state.movie}/>
-                </div>
-
-                <Pagination pages={this.state.pages} currentPage={this.state.currentPage} decrementPage={this.decrementPage} incrementPage={this.incrementPage}
-                            setPageEnd={this.setPageEnd} setPageBegin={this.setPageBegin} selectPage={this.selectPage}/>
-            </div>
-
-        );
-    }
-
-
-    // Helper methods & handlers
-    ////////////////////////////
 
     // Handler to change the movie in the modal
     changeMovie = (movie) => {
@@ -132,6 +105,41 @@ class Overview extends Component {
                 currentPage: this.state.pages
             }, this.fetchMovies)
     };
+
+    /*************************
+     * End of event handlers *
+     *************************/
+
+
+    render() {
+
+        // Fetch stuff from the state
+        const { movies, moviesLoading, pages, currentPage, movie } = this.state;
+
+        // Generate the content, show a spinner of the movies are still loading
+        const moviesContent = moviesLoading
+            ? <Spinner/>
+            : movies.map(movie => {
+                const posterUrl = process.env.REACT_APP_BASEURL_CARDIMG + movie.poster_path;
+                return <MovieCard key={movie.id} votes={movie.vote_average} overview={movie.overview} poster={posterUrl} relDate={movie.release_date} title={movie.title} movie={movie} changeMovie={this.changeMovie}/>
+            });
+
+        return (
+            <div>
+                <Pagination pages={pages} currentPage={currentPage} decrementPage={this.decrementPage} incrementPage={this.incrementPage}
+                            setPageEnd={this.setPageEnd} setPageBegin={this.setPageBegin} selectPage={this.selectPage}/>
+
+                <div className="row">
+                    {moviesContent}
+                    <MovieDetailModal movie={movie}/>
+                </div>
+
+                <Pagination pages={pages} currentPage={currentPage} decrementPage={this.decrementPage} incrementPage={this.incrementPage}
+                            setPageEnd={this.setPageEnd} setPageBegin={this.setPageBegin} selectPage={this.selectPage}/>
+            </div>
+
+        );
+    }
 }
 
 export default Overview;

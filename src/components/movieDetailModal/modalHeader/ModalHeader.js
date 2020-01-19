@@ -1,10 +1,13 @@
 // Imports
 //////////
 
+// Base dependencies
 import React from 'react';
 
 
-// Modal header
+// ModalHeader component
+////////////////////////
+
 export const ModalHeader = () => {
     return (
         <div className="modal-header">

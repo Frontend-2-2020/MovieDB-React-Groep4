@@ -6,10 +6,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-// Component
-////////////
+// PageControlItem component
+////////////////////////////
 
-export const PageControlItem = ({icon, action}) => {
+export const PageControlItem = ({ icon, action }) => {
 
     // Generate the right icon & attach the action on Click
     let control = '';

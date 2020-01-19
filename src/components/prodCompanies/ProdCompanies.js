@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 // ProdCompanies component
 //////////////////////////
 
-export const ProdCompanies = ({prodCompanies}) => {
+export const ProdCompanies = ({ prodCompanies }) => {
 
     const baseUrlCardImage = process.env.REACT_APP_BASEURL_CARDIMG;
 

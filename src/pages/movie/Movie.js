@@ -2,7 +2,7 @@
 //////////
 
 // Base dependencies
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
 // Components
@@ -16,6 +16,7 @@ import { MovieDetails } from "../../components/movieDetails/MovieDetails";
 
 class Movie extends Component {
 
+    // Constructor for the component
     constructor(props) {
         super(props);
 

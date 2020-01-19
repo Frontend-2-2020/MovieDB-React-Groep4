@@ -2,20 +2,18 @@
 //////////
 
 // Base dependencies
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 
 // Badge component
 //////////////////
 
-class Badge extends Component {
-    render() {
+const Badge  = ({ genre }) => {
         return (
-            <span className="badge badge-pill badge-primary ml-2 mr-2 p-1">{this.props.genre}</span>
+            <span className="badge badge-pill badge-primary ml-2 mr-2 p-1">{genre}</span>
         );
-    }
-}
+};
 
 
 // Prop types for the component

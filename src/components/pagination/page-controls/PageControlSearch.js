@@ -2,16 +2,17 @@
 //////////
 
 // Base dependencies
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 
 
-// Component
-////////////
+// PageControlSearch component
+//////////////////////////////
 
-export const PageControlSearch = ({selectPage}) => {
+export const PageControlSearch = ({ selectPage }) => {
 
     // Issue an empty reference
     const inputEl = useRef(null);
+
 
     /******************
      * Event handlers *
@@ -20,7 +21,11 @@ export const PageControlSearch = ({selectPage}) => {
     // On search click handler
     const onSearchClick = () => {
         if (inputEl.current.value) {
-            selectPage(inputEl.current.value);
+            if(parseInt(inputEl.current.value) === 0) {
+                selectPage(1);
+            } else {
+                selectPage(inputEl.current.value);
+            }
 
             // Clear the input value
             inputEl.current.value = '';
@@ -30,6 +35,7 @@ export const PageControlSearch = ({selectPage}) => {
     /*************************
      * End of event handlers *
      *************************/
+
 
     return (
         <li className="page-item d-flex ml-2 mr-2">
@@ -45,7 +51,7 @@ export const PageControlSearch = ({selectPage}) => {
             />
             <button
                 className="btn btn-sm btn-secondary"
-                onClick={() => onSearchClick()}><i className="fas fa-search"/></button>
+                onClick={onSearchClick}><i className="fas fa-search"/></button>
         </li>
     )
 };

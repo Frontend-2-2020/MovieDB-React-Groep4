@@ -17,6 +17,7 @@ import { ModalFooter } from "./modalFooter/ModalFooter";
 
 const MovieDetailModal = (props) => {
 
+    // Fetch the movie from the props
     const { movie } = props;
 
     // State handling

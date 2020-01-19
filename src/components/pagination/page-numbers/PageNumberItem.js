@@ -5,10 +5,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Component
-////////////
 
-export const PageNumberItem = ({pageNumber, active, selectPage}) => {
+// PageNumberItem component
+///////////////////////////
+
+export const PageNumberItem = ({ pageNumber, active, selectPage }) => {
 
     // Generate the listItem as active or not
     let listItem = '';
@@ -34,6 +35,7 @@ export const PageNumberItem = ({pageNumber, active, selectPage}) => {
 };
 
 
+// Prop types for the component
 PageNumberItem.propTypes = {
     pageNumber: PropTypes.number.isRequired,
     active: PropTypes.bool.isRequired,

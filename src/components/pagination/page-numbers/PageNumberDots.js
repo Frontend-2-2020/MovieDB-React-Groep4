@@ -4,8 +4,9 @@
 // Base dependencies
 import React from 'react';
 
-// Component
-////////////
+
+// PageNumberDots component
+///////////////////////////
 
 export const PageNumberDots = () => {
 

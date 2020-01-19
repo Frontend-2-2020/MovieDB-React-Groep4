@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 // MovieStat component
 //////////////////////
 
-export const MovieStat = ({position, head, par, type}) => {
+export const MovieStat = ({ position, head, par, type }) => {
 
     // Discern className
     let className = "";

@@ -6,12 +6,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import {PageControlItem} from './PageControlItem';
-import {PageControlSearch} from './PageControlSearch';
+import { PageControlItem } from './PageControlItem';
+import { PageControlSearch } from './PageControlSearch';
 
 
-// Component
-////////////
+// PageControls component
+/////////////////////////
 
 export const PageControls = ({ decrementPage, incrementPage, setPageEnd, setPageBegin, selectPage }) => {
     return (

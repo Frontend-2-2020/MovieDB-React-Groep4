@@ -6,14 +6,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import {PageNumberItem} from './PageNumberItem';
-import {PageNumberDots} from './PageNumberDots';
+import { PageNumberItem } from './PageNumberItem';
+import { PageNumberDots } from './PageNumberDots';
 
 
-// Component
-////////////
+// PageNumbers component
+////////////////////////
 
-export const PageNumbers = ({pages, currentPage, selectPage}) => {
+export const PageNumbers = ({ pages, currentPage, selectPage }) => {
 
     // Loop through the pages & create the page numbers
     // Redesign the page numbers according to the current page

@@ -10,8 +10,8 @@ import { PageNumbers } from './page-numbers/PageNumbers';
 import { PageControls } from "./page-controls/PageControls";
 
 
-// Component
-////////////
+// Pagination Component
+///////////////////////
 
 export const Pagination = ({ pages, currentPage, decrementPage, incrementPage, setPageEnd, setPageBegin, selectPage }) => {
 
@@ -42,7 +42,7 @@ export const Pagination = ({ pages, currentPage, decrementPage, incrementPage, s
     );
 
     return (
-        <div>
+        <div className="mt-4">
             {paginationContent}
         </div>
     )

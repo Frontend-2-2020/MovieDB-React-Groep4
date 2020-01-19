@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 // Poster component
 ///////////////////
 
-export const Poster = ({url, title}) => {
+export const Poster = ({ url, title }) => {
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center mr-4">
